@@ -3,16 +3,17 @@
 </script>
 
 <main>
-	<h1>Hello World</h1>
+	<img src="./slyotis.jpg" />
 </main>
 
 <style>
 		main {
 			width: 100%;
 			height: 100%;
-			background-color: #FFCC80;
+			background-color: #E8D680;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
 		}
 </style>
