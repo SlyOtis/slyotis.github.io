@@ -5,9 +5,10 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
-    "validate": "svelte-check",
-    "copy": "copy .\\public\\* .\\..\\",
-    "deploy": "yarn build && yarn copy && git add . && git commit -m \"Updated version \" && git push"
+		"validate": "svelte-check",
+		"copy": "copy .\\public\\* .\\..\\",
+		"git:deploy": "cd .. && git add . && git commit -m \"Updated version \" && git push",
+    "deploy": "yarn build && yarn copy && yarn git:deploy"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
