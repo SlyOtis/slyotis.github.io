@@ -6,7 +6,7 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
 		"validate": "svelte-check",
-		"copy": "copy .\\public\\* .\\..\\",
+		"copy": "xcopy .\\public\\* .\\..\\ /EY",
 		"git:deploy": "cd .. && git add . && git commit -m \"Updated version \" && git push",
     "deploy": "yarn build && yarn copy && yarn git:deploy"
   },
